@@ -3,7 +3,6 @@ title: 'What’s the big idea?'
 date: 2009-01-02T10:41:00.002-06:00
 draft: false
 url: /2009/01/whats-big-idea.html
-featured: ./images/profile.png
 tags: 
 - post
 - Words

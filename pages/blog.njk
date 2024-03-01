@@ -1,0 +1,26 @@
+---
+title: Blog
+tags: page
+pagination:
+  data: collections.all
+  size: 12
+  alias: posts
+---
+<h2>A paginated list of all posts</h2>
+{% for post in posts %}
+  <a href="{{ post.url }}">
+    {% if post.data.featured %}
+      {% image post.data.featured,
+      post.data.title,
+      "",
+      "20rem" %}
+    {% endif %}
+  </a>
+
+{%- endfor %}
+{% if pagination.href.previous %}
+  <a class="" href="{{ pagination.href.previous }}">&lt; Newer Posts</a>
+{% endif %}
+{% if pagination.href.next %}
+  <a class="" href="{{ pagination.href.next }}">Older Posts &gt;</a>
+{% endif %}
